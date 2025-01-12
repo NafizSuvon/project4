@@ -1,0 +1,153 @@
+/* Basic reset and layout styles */
+
+body,
+h1,
+h2,
+button {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+.cart-info {
+    /* display: inline-block; */
+    float: right;
+    margin-top: -30px;
+}
+
+.cart-info button {
+    background-color: #f6de0a;
+    color: #333;
+    padding: 8px;
+    border: 1px solid green;
+    cursor: pointer;
+}
+
+#product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.product-card {
+    background: #f9f9f9;
+    padding: 15px;
+    margin: 10px;
+    width: 240px;
+    text-align: center;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.product-card h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.product-card p {
+    font-size: 0.9em;
+    color: #555;
+    margin: 5px 0;
+}
+
+.product-card button {
+    background-color: #28a745;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.product-card button:hover {
+    background-color: #218838;
+}
+
+#cart-summary {
+    margin-top: 20px;
+    display: none;
+}
+
+#cart-items {
+    margin-bottom: 10px;
+}
+
+#cart-items div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+}
+
+#cart-items .product-image {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+#cart-items .product-info {
+    flex-grow: 1;
+    padding-left: 10px;
+}
+
+#cart-items .product-name {
+    font-weight: bold;
+}
+
+#cart-items .product-description {
+    font-size: 0.9em;
+    color: #555;
+}
+
+#cart-items .product-price {
+    font-size: 1em;
+    color: #333;
+}
+
+#cart-items .quantity-controls {
+    display: flex;
+    align-items: center;
+}
+
+#cart-items .quantity-controls button {
+    padding: 5px 10px;
+    margin: 0 5px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#cart-items .quantity-controls button:hover {
+    background-color: #0056b3;
+}
+
+#total-price {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-top: 15px;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
