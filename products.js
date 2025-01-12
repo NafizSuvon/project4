@@ -1,4 +1,3 @@
-// Simulated product data (you can add more or fetch from an API)
 const products = [{
         id: 1,
         name: 'Camera',

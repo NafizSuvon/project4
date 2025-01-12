@@ -1,4 +1,3 @@
-// Cart logic
 let cart = [];
 
 function addToCart(productId) {
@@ -37,10 +36,8 @@ function updateCart() {
     const cartCount = cart.reduce((total, item) => total + item.quantity, 0);
     const totalPrice = cart.reduce((total, item) => total + item.price * item.quantity, 0);
 
-    // Update cart button count
     document.getElementById('view-cart-btn').textContent = `View Cart (${cartCount})`;
 
-    // Update cart display
     const cartItems = document.getElementById('cart-items');
     cartItems.innerHTML = cart.map(item => `
         <div>

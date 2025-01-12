@@ -1,4 +1,3 @@
-// Display products dynamically
 document.addEventListener("DOMContentLoaded", () => {
     const productList = document.getElementById('product-list');
 
@@ -15,14 +14,12 @@ document.addEventListener("DOMContentLoaded", () => {
         productList.appendChild(productCard);
     });
 
-    // View Cart button behavior
+
     document.getElementById('view-cart-btn').addEventListener('click', () => {
         document.getElementById('cart-summary').style.display = 'block';
     });
 
-    // Clear Cart button behavior
     document.getElementById('clear-cart-btn').addEventListener('click', clearCart);
 
-    // Checkout button behavior
     document.getElementById('checkout-btn').addEventListener('click', checkout);
 });
